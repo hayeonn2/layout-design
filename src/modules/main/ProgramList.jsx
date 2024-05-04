@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../../style/ProgramList.css";
+import "./ProgramList.css";
 
 export function ProgramList() {
   const navigate = useNavigate();
