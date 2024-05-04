@@ -9,8 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0e1116;
-  color: #e7edf2;
+  background-color: #fff;
+  color: #333;
 }
 ol,
 ul,
