@@ -1,0 +1,34 @@
+.program_edit_layout {
+  max-width: 1320px;
+  margin: 80px auto;
+}
+
+.program_step_wrapper {
+  padding: 0 30px;
+  margin-top: 60px;
+  font-size: 18px;
+}
+.program_step_box {
+  display: flex;
+  gap: 12px;
+  border-radius: 40px;
+  background-color: #e1f0f8;
+  padding: 10px;
+}
+
+.program_step_wrapper li {
+  width: 50%;
+  padding: 13px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 40px;
+  color: #024c8c;
+  font-weight: 500;
+}
+
+.program_step_wrapper li img {
+  margin-right: 16px;
+}
