@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { useRef } from "react";
 
 export const ProgramEditLayout = () => {
+  // programRef:  {current: null} 형태로 출력됨.
   const programRef = useRef(null);
   const formData = new FormData();
 
@@ -28,7 +29,8 @@ export const ProgramEditLayout = () => {
         </ul>
       </div>
 
-      <Outlet context={(programRef, formData)} />
+      {/* Outlet context를 이용해 자식요소에 props 전달. 이때 {} 를 이용해 넘겨야 함. */}
+      <Outlet context={{ programRef, formData }} />
     </div>
   );
 };
