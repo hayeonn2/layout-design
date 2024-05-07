@@ -6,7 +6,16 @@ import { useRef } from "react";
 
 export const ProgramEditLayout = () => {
   // programRef:  {current: null} 형태로 출력됨.
-  const programRef = useRef(null);
+  const programRef = useRef({
+    // 개설 후 데이터 저장 (불러오기 기능을 위해서)
+    cacheData: [],
+
+    // 사용자가 입력한 데이터를 저장할 곳
+    requestData: {
+      baseInfo: null,
+    },
+  });
+
   const formData = new FormData();
 
   return (
